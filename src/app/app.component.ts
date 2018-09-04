@@ -8,4 +8,8 @@ import { NgModel} from '@angular/forms';
 })
 export class AppComponent {
   title = 'app';
+  loadedFeature = "recipe";
+  onNavigate(feature:string){
+    this.loadedFeature=feature;
+  }
 }
